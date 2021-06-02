@@ -1,0 +1,264 @@
+:root {
+    --primary-color: rgb(70, 70, 70);
+    --secondary-color: rgb(116, 116, 116);
+    --lily-color: #3c7aff;
+    --lily-dark-color: #9baac750;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+ul, li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    color: var(--primary-color) !important;
+}
+
+p, span {
+    color: var(--secondary-color);
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.cv {
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    width: 21cm;
+    height: 29.7cm;
+}
+
+.cv-body-wrapper {
+    width: 18.5cm;
+    height: 27.2cm;
+
+    background: white;
+
+    display: flex;
+}
+
+.cv-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 40%;
+
+    background-color: rgb(241, 241, 241);
+}
+
+.cv-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    width: 60%;
+    font-size: 14px;
+}
+
+.cv-right h2 {
+    margin-bottom: .5rem;
+}
+
+.image-wrapper, .image-wrapper img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.image-wrapper {
+    padding: 1rem;
+}
+
+.image-wrapper img {
+    border: 3px solid black;
+}
+
+.social, .info {
+    display: flex;
+    align-items: center;
+}
+
+.info, .social {
+    font-size: 14px;
+    margin-top: .6rem;
+    margin-bottom: .6rem;
+}
+
+.info i {
+    color: var(--primary-color) !important;
+}
+
+.icon-wrapper {
+    height: 35px;
+    width: 35px;
+    margin-right: .5rem;
+}
+
+.icon-wrapper.colored {
+    border-radius: 20%;
+    background: var(--lily-dark-color);
+}
+
+.btn {
+    transition: all .3s;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn.download {
+    width: 100%;
+    height: 75px;
+    
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: white;
+
+    background-color: #9baac7;
+}
+
+.btn.download:hover {
+    background-color: #7c88a0;
+}
+
+.bars-wrapper  {
+    display: flex;
+    justify-content: space-between;
+}
+
+.languages, .skills {
+    width: 45%;
+}
+
+.progress-container {  
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-label h5 {
+    margin-bottom: .3rem;
+}
+
+.progress-wrapper {
+    background-color: rgb(238, 238, 238);
+
+    width: 100%;
+    height: 8px;
+    border-radius: 15px;
+}
+
+.progress {
+    border-radius: 15px;
+    height: 8px;
+}
+
+.progress.green {
+    background-color: rgb(53, 170, 32);
+}
+.progress.yellow {
+    background-color: rgb(247, 243, 38);
+}
+.progress.orange {
+    background-color: rgb(235, 175, 47);
+}
+.progress.red {
+    background-color: rgb(170, 32, 32);
+}
+
+/* UTILS */
+.t-center {
+    text-align: center
+}
+
+.box {
+    padding: 1rem;
+}
+
+.bg-lily {
+    background: #e8e9ec;
+}
+.text-lily {
+    color: var(--lily-color) !important;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex.col {
+    flex-direction: column;
+}
+
+.separator {
+    height: 2px;
+    width: 100%;
+
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+
+    background: #9baac7;
+}
+
+.list li {
+    padding-top: .4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.list span {
+    font-size: 10px;
+    color: var(--lily-color);
+}
+
+.list li p{
+    font-size: 13px;
+}
+
+.list i {
+    color: var(--lily-color) !important;;
+}
+/* UTILS */
+
+@media print {
+    body{
+        width: 21cm;
+        height: 29.7cm;
+        /* change the margins as you want them to be. */
+   } 
+
+   .hidden-print {
+        display: none !important;
+    }
+
+    .cv-left {
+        justify-content: space-evenly !important;
+    }
+}
