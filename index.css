@@ -28,6 +28,7 @@ ul, li {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-variant-caps: all-small-caps;
     margin-bottom: 1rem;
     color: var(--primary-color) !important;
 }
@@ -192,6 +193,26 @@ p, span {
 }
 
 /* UTILS */
+.w-100 {
+    width: 100% !important;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.mb-sm {
+    margin-bottom: .4rem;
+}
+
+.mb-md {
+    margin-bottom: 1.3rem;
+}
+
+.mb-lg {
+    margin-bottom: 2rem;
+}
+
 .t-center {
     text-align: center
 }
